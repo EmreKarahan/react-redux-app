@@ -43,9 +43,9 @@
     "eject": "react-scripts eject"
   },
   "lint-staged": {
-    //"*.js": ["yarn run format", "git add"]
+    "*.js": ["yarn run format", "git add"]
   },
-  "pre-commit": "",
+  //"pre-commit": "lint-staged",
   "jest": {
     "snapshotSerializers": ["<rootDir>/node_modules/enzyme-to-json/serializer"]
   }

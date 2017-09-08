@@ -22,3 +22,6 @@ const users = [
     username: 'badit',
   },
 ];
+
+const newUsers = users.map(item => `ID: ${item.id} Username: ${item.username}`);
+console.log(newUsers);
