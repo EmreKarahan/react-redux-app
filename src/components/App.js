@@ -1,9 +1,9 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Header from './Header';
-import Footer from './Footer';
-import Content from './Content';
+import Header from './shared/Header';
+import Footer from './shared/Footer';
+import Content from './shared/Content';
 
 import Home from '../routes/Home';
 import Start from '../routes/Start';
@@ -16,7 +16,7 @@ const App = () => (
     <Content>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/basla" component={Start} />
+        <Route path="/basla" component={Start} />
       </Switch>
     </Content>
     <Footer />

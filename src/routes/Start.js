@@ -1,4 +1,5 @@
 import React from 'react';
 
-const Start = () => <h1>KAtegori Seçme Sayfası</h1>;
+const Start = () => <h2>Kategori seçme sayfası</h2>;
+
 export default Start;
