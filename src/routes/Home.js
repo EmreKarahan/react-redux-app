@@ -6,7 +6,6 @@ import { increment, incrementAsync, decrement, decrementAsync } from '../redux/m
 
 const Home = props => (
   <div>
-    <h1>Home</h1>
     <p>Count: {props.count}</p>
 
     <p>
