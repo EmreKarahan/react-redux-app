@@ -24,9 +24,9 @@ const render = () => {
 
 /* istanbul ignore if */
 if (process.env.NODE_ENV === 'development' && module.hot) {
-  module.hot.accept('./components/App', () => {
+  module.hot.accept('./container/App/App', () => {
     // eslint-disable-next-line
-    const NextApp = require('./components/App').default;
+    const NextApp = require('./container/App/App').default;
     render(NextApp);
   });
 }
