@@ -23,5 +23,5 @@ before_deploy:
 deploy:
   provider: surge
   project: ./build/
-  domain: react-redux-app.surge.sh
+  domain: fierce-payment.surge.sh
   skip_cleanup: true
