@@ -5,8 +5,8 @@ import Header from './shared/Header';
 import Footer from './shared/Footer';
 import Content from './shared/Content';
 
-import Home from '../routes/Home';
-import Start from '../routes/Start';
+import Home from '../container/Home/Home';
+import Start from '../container/Category/Start';
 
 import './App.css';
 

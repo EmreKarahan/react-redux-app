@@ -3,7 +3,7 @@ import thunk from 'redux-thunk';
 import { createLogger } from 'redux-logger';
 import { routerMiddleware } from 'react-router-redux';
 
-import rootReducer from './modules';
+import rootReducer from './modules/reducers';
 
 const configureStore = (prelodedState, history) => {
   const middlewares = [thunk, routerMiddleware(history)];
@@ -26,9 +26,9 @@ const configureStore = (prelodedState, history) => {
 
   /* istanbul ignore if */
   if (process.env.NODE_ENV === 'development' && module.hot) {
-    module.hot.accept('./modules', () => {
+    module.hot.accept('./modules/reducers', () => {
       // eslint-disable-next-line
-      const nextRootReducer = require('./modules').default;
+      const nextRootReducer = require('./modules/reducers').default;
       store.replaceReducer(nextRootReducer);
     });
   }
